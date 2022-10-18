@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<head>
+    <title>DOM Practice</title>  
+    
+</head>
+<body>
+<div class="first">hello</div>
+<div class="first"></div>
+<div class="second">greetinsgs</div>
+  <script>
+        let first = document.getElementsByClassName("first");
+        let text = function(){
+            for(let i = 0; i<first.length; i++)
+        first[i].innerHTML = "<h1>Welcome </h1>";
+        }
+        text();
+
+        let second = document.getElementsByClassName("second");
+        second.innerHTML = "More";    
+    </script>
+</body>
+</html>
